@@ -13,7 +13,7 @@ export default function Home() {
         className="mx-auto max-w-7xl px-6 py-20"
       >
         <h2 className="text-3xl md:text-4xl font-light text-center mb-10">Проекты</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
           {[1,2,3,4,5,6].map((i) => (
             <a key={i} href="#" className="group relative block overflow-hidden rounded-2xl">
               <img
@@ -33,3 +33,4 @@ export default function Home() {
     </main>
   );
 }
+

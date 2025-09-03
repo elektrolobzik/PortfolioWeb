@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import ScrollToTopOnLoad from "@/components/ScrollToTopOnLoad";
 import "./globals.css";
 import PreloaderWave from "@/components/ui/PreloaderWave";
 import CustomCursor from "@/components/effects/CustomCursor";
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru">
       <body>
+    <ScrollToTopOnLoad onlyHome />
         {/* Глобальный кастомный курсор (на всех страницах) */}
         <CustomCursor />
 
@@ -24,3 +26,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
+

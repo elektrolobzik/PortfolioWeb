@@ -248,3 +248,6 @@ html::-webkit-scrollbar {
 
 /* Чуть мягче кинематику слоёв */
 .fixed, .pointer-events-none { will-change: opacity, transform; }
+html {
+  scroll-behavior: smooth;
+}
